@@ -3,7 +3,7 @@ from flask import g
 import pyodbc
 
 # Get environ vars for DB connection
-DRIVER   = os.environ['DRIVER']
+DRIVER   = '{ODBC Driver 13 for SQL Server}'
 SERVER   = os.environ['SERVER']
 DATABASE = os.environ['DATABASE']
 USERNAME = os.environ['USERNAME']
