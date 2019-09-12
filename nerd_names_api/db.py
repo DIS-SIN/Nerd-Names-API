@@ -4,10 +4,10 @@ import pyodbc
 
 # Get environ vars for DB connection
 DRIVER   = '{ODBC Driver 13 for SQL Server}'
-SERVER   = os.environ['SERVER']
-DATABASE = os.environ['DATABASE']
-USERNAME = os.environ['USERNAME']
-PASSWORD = os.environ['PASSWORD']
+SERVER   = os.environ['DB_HOST']
+DATABASE = os.environ['DB_NAME']
+USERNAME = os.environ['DB_USERNAME']
+PASSWORD = os.environ['DB_PASSWORD']
 
 
 def query_mysql(query):
